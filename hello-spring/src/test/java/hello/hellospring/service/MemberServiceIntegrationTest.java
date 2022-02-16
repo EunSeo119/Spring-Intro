@@ -22,10 +22,10 @@ class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    void join()  {   //회원가입(Test는 이름 한글로 써도 됨! 근데 한글로 하면 에러뜨네..ㅋ)
+    void join()  {
         //given
         Member member = new Member();
-        member.setName("spring");
+        member.setName("spring222");
 
         //when
         Long saveId = memberService.join(member);
